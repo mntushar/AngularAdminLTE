@@ -8,8 +8,8 @@ import { NavbarComponent } from './Component/Admin/AdminIndex/navbar/navbar.comp
 import { MainSidebarComponent } from './Component/Admin/AdminIndex/main-sidebar/main-sidebar.component';
 import { FooterComponent } from './Component/Admin/AdminIndex/footer/footer.component';
 import { ContentHeaderComponent } from './Component/Admin/AdminIndex/content-header/content-header.component';
-import { BodyComponent } from './Component/Admin/AdminIndex/body/body.component';
 import { HomeComponent } from './Component/Admin/home/home.component';
+import { UserHomeComponent } from './Component/User/user-home/user-home.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +19,8 @@ import { HomeComponent } from './Component/Admin/home/home.component';
     MainSidebarComponent,
     FooterComponent,
     ContentHeaderComponent,
-    BodyComponent,
-    HomeComponent
+    HomeComponent,
+    UserHomeComponent
   ],
   imports: [
     BrowserModule,
