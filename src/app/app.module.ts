@@ -8,6 +8,8 @@ import { NavbarComponent } from './Component/Admin/AdminIndex/navbar/navbar.comp
 import { MainSidebarComponent } from './Component/Admin/AdminIndex/main-sidebar/main-sidebar.component';
 import { FooterComponent } from './Component/Admin/AdminIndex/footer/footer.component';
 import { ContentHeaderComponent } from './Component/Admin/AdminIndex/content-header/content-header.component';
+import { BodyComponent } from './Component/Admin/AdminIndex/body/body.component';
+import { HomeComponent } from './Component/Admin/home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ContentHeaderComponent } from './Component/Admin/AdminIndex/content-hea
     NavbarComponent,
     MainSidebarComponent,
     FooterComponent,
-    ContentHeaderComponent
+    ContentHeaderComponent,
+    BodyComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
