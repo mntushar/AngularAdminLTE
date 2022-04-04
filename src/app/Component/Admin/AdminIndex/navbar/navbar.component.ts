@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'Admin-navbar',
@@ -6,10 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  docElement!: HTMLElement;
+  isFullScreen: boolean = false;
 
-  constructor() { }
+  constructor(@Inject(DOCUMENT) private document: any) { }
 
   ngOnInit(): void {
+    this.docElement = document.documentElement;
   }
 
+  toggleFullScreen() {
+    if (!this.isFullScreen) {
+      this.docElement.requestFullscreen();
+    }
+    else {
+      document.exitFullscreen();
+    }
+    this.isFullScreen = !this.isFullScreen;
+}
 }
