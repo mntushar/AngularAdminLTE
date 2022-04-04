@@ -24,5 +24,5 @@ export class NavbarComponent implements OnInit {
       document.exitFullscreen();
     }
     this.isFullScreen = !this.isFullScreen;
-}
+  }
 }
